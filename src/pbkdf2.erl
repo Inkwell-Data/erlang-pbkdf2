@@ -19,6 +19,8 @@
 
 -type(digest_func_info() :: md4 | md5 | ripemd160 | sha | sha224 | sha256 | sha384 | sha512).
 
+-export_type([digest_func_info/0]). 
+
 -define(MAX_DERIVED_KEY_LENGTH, (1 bsl 32 - 1)).
 
 %%--------------------------------------------------------------------
